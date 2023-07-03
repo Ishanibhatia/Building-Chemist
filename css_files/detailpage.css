@@ -1,0 +1,167 @@
+body {
+    width: auto;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-container {
+    width: auto;
+    margin: 4rem;
+    padding: 15px;
+    display: flex;
+}
+
+/* Columns */
+.left-column {
+    width: 35%;
+
+    position: relative;
+}
+
+.right-column {
+    width: 65%;
+    margin-top: -3rem;
+
+}
+
+/* Left Column */
+.left-column img {
+    position: absolute;
+    margin: -1rem 4rem;
+    width: 15rem;
+    height: 15rem;
+
+
+}
+
+
+
+/* Product Description */
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+
+.product-description h1 {
+    font-weight: 300;
+    font-size: 52px;
+    color: #172554;
+    letter-spacing: -2px;
+}
+
+.product-description ul li {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    line-height: 24px;
+}
+
+.cart-btn {
+    display: inline-block;
+    background-color: #172554;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+}
+
+.cart-btn:hover {
+    background-color: #64af3d;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .left-column img {
+        position: absolute;
+        margin-top: -1rem;
+        margin-left: 3rem;
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .left-column {
+        display: none;
+        visibility: hidden;
+
+    }
+
+
+
+    .content-container {
+        margin: 5%;
+        padding: 0;
+
+    }
+
+    .right-column {
+        position: relative;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        width: 100%;
+
+    }
+
+    /* Left Column */
+    .left-column img {
+        display: none;
+    }
+
+
+
+    /* Product Description */
+    .product-description {
+        border-bottom: 1px solid #E1E8EE;
+        margin-bottom: 20px;
+        padding: 0;
+        position: relative;
+    }
+
+    .product-description h1 {
+        position: relative;
+        font-weight: 300;
+        font-size: large;
+        color: #172554;
+        letter-spacing: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-description ul li {
+        position: relative;
+
+        font-size: small;
+        font-weight: 300;
+        color: black;
+        line-height: 24px;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .cart-btn {
+        position: relative;
+
+        display: inline-block;
+        background-color: #172554;
+        border-radius: 2px;
+        font-size: small;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 5px 10px;
+        transition: all .5s;
+        align-items: center;
+    }
+
+}
